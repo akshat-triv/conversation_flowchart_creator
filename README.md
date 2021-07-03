@@ -9,5 +9,5 @@ npm install
 ### Compiles and starts production server
 
 ```
-npm run serve
+npm run start
 ```
