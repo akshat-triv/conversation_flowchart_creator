@@ -1,0 +1,13 @@
+[
+  {
+    "response": [
+      { "id": 2, "type": "action", "value": "dummy text - action block" },
+      { "id": 3, "type": "utterance", "value": "dummy text - utterance block" }
+    ],
+    "query": {
+      "id": 1,
+      "type": "usermessage",
+      "value": "dummy text - user message block"
+    }
+  }
+]
