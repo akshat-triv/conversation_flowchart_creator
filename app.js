@@ -27,6 +27,6 @@ app.get("/getJson", (_, res) => {
   res.download(`${__dirname}/data.json`, "data.json");
 });
 
-app.listen(3000, "127.0.0.1", () => {
+app.listen(4000, "127.0.0.1", () => {
   console.log("server is running on port 3000");
 });
