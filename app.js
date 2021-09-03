@@ -8,10 +8,10 @@ const app = express();
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "dist")));
 
-const homePage = fs.readFileSync(`${__dirname}/views/index.html`);
+// const homePage = fs.readFileSync(`${__dirname}/views/index.html`);
 
 app.get("/", (req, res) => {
-  res.end(homePage);
+  res.sendFile(path.join(__dirname, "/views/index.html"));
 });
 
 app.post("/saveData", async (req, res) => {
