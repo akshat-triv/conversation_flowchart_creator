@@ -1,5 +1,6 @@
 const express = require("express");
 const fs = require("fs");
+const cors = require("cors");
 const path = require("path");
 const { promisify } = require("util");
 
@@ -7,6 +8,7 @@ const app = express();
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "dist")));
+app.use(cors());
 
 // const homePage = fs.readFileSync(`${__dirname}/views/index.html`);
 
