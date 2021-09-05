@@ -24,7 +24,18 @@ app.post("/saveData", async (req, res) => {
   res.status(201).json({ status: "success" });
 });
 
-app.get("/getJson", (_, res) => {
+app.get("/getJson", async (_, res) => {
+  let jsonData = await promisify(fs.readFile)(
+    path.join(__dirname, "data.json"),
+    "utf-8"
+  );
+
+  jsonData = JSON.parse(jsonData);
+
+  res.status(200).json({ Bot: { bot_data: jsonData } });
+});
+
+app.get("/downloadJson", (_, res) => {
   res.download(`${__dirname}/data.json`, "data.json");
 });
 

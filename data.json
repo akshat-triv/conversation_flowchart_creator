@@ -1,1 +1,28 @@
-[{"response":[{"id":5,"type":"utterance","value":"Hello Akshat, I'm a Bot."}],"query":{"id":4,"type":"usermessage","value":"Hi, I'm Akshat."}},{"query":{"id":6,"type":"usermessage","value":"Do you know what JavaScript is ?"},"response":[{"id":7,"type":"utterance","value":"Wait, let me search the web for that."},{"id":8,"type":"utterance","value":"Wait, I'm looking into it."},{"id":9,"type":"action","value":"Send a request to Google search API for \"JavaScript\"."}]}]
+[
+  {
+    "response": [
+      { "id": 5, "type": "utterance", "value": "Hello Akshat, I'm a Bot." }
+    ],
+    "query": { "id": 4, "type": "usermessage", "value": "Hi, I'm Akshat." }
+  },
+  {
+    "query": {
+      "id": 6,
+      "type": "usermessage",
+      "value": "Do you know what JavaScript is ?"
+    },
+    "response": [
+      {
+        "id": 7,
+        "type": "utterance",
+        "value": "Wait, let me search the web for that."
+      },
+      { "id": 8, "type": "utterance", "value": "Wait, I'm looking into it." },
+      {
+        "id": 9,
+        "type": "action",
+        "value": "Send a request to Google search API for \"JavaScript\"."
+      }
+    ]
+  }
+]
