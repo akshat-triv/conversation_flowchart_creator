@@ -3,8 +3,6 @@ const fs = require("fs");
 const cors = require("cors");
 const path = require("path");
 const { promisify } = require("util");
-const dotenv = require("dotenv");
-dotenv.config({ path: "./config.env" });
 
 const app = express();
 
@@ -43,6 +41,6 @@ app.get("/downloadJson", (_, res) => {
 
 const port = process.env.PORT || 4000;
 
-app.listen(port, "0.0.0.0", () => {
+app.listen(port, () => {
   console.log(`server is running on port ${port}`);
 });
