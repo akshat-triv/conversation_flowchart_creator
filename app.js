@@ -39,6 +39,8 @@ app.get("/downloadJson", (_, res) => {
   res.download(`${__dirname}/data.json`, "data.json");
 });
 
-app.listen(4000, "127.0.0.1", () => {
+const port = process.env.NODE_ENV || 4000;
+
+app.listen(port, "127.0.0.1", () => {
   console.log("server is running on port 4000");
 });
