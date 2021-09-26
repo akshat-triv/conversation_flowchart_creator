@@ -3,6 +3,7 @@ const fs = require("fs");
 const cors = require("cors");
 const path = require("path");
 const { promisify } = require("util");
+require("dotenv").config();
 
 const app = express();
 
@@ -42,5 +43,5 @@ app.get("/downloadJson", (_, res) => {
 const port = process.env.PORT || 4000;
 
 app.listen(port, "127.0.0.1", () => {
-  console.log("server is running on port 4000");
+  console.log(`server is running on port ${port}`);
 });
