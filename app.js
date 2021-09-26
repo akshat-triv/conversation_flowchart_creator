@@ -3,7 +3,8 @@ const fs = require("fs");
 const cors = require("cors");
 const path = require("path");
 const { promisify } = require("util");
-require("dotenv").config();
+const dotenv = require("dotenv");
+dotenv.config({ path: "./config.env" });
 
 const app = express();
 
