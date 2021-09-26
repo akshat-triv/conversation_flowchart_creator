@@ -39,7 +39,7 @@ app.get("/downloadJson", (_, res) => {
   res.download(`${__dirname}/data.json`, "data.json");
 });
 
-const port = process.env.NODE_ENV || 4000;
+const port = process.env.PORT || 4000;
 
 app.listen(port, "127.0.0.1", () => {
   console.log("server is running on port 4000");
